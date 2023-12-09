@@ -10,8 +10,10 @@ import { useBrainContext } from "@/lib/context/BrainProvider/hooks/useBrainConte
 import { useSupabase } from "@/lib/context/SupabaseProvider";
 import { redirectToLogin } from "@/lib/router/redirectToLogin";
 
+import MyComponent  from "./MyComponent";
 import { Crawler } from "./components/Crawler";
 import { FileUploader } from "./components/FileUploader";
+
 
 const requiredRolesForUpload: BrainRoleType[] = ["Editor", "Owner"];
 
@@ -65,6 +67,8 @@ const UploadPage = (): JSX.Element => {
       <FileUploader />
       <Divider text={t("or")} className="m-5" />
       <Crawler />
+
+
       <div className="flex flex-col items-center justify-center gap-5 mt-5">
         <Link href={"/chat"}>
           <Button variant={"secondary"} className="py-3">

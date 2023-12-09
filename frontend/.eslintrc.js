@@ -151,7 +151,6 @@ module.exports = {
         "@typescript-eslint/interface-name-prefix": 0,
         "@typescript-eslint/explicit-module-boundary-types": "error",
         "@typescript-eslint/no-explicit-any": "error",
-        "@typescript-eslint/no-unused-vars": "error",
         "@typescript-eslint/ban-types": [
           "error",
           {
